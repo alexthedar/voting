@@ -5,7 +5,7 @@ import {List, Map} from 'immutable'
 describe('immutability', () => {
   describe('a number', () => {
     function increment(currentState){
-      return currentStat + 1
+      return currentState + 1
     }
 
     it('is immutable', () => {
@@ -32,7 +32,7 @@ describe('immutability', () => {
         '28 days later',
         'Sunshine'
       ))
-      expect(state).to,equal(List.of(
+      expect(state).to.equal(List.of(
         'Trainspotting',
         '28 days later'
       ))
