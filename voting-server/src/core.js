@@ -6,13 +6,14 @@ export function setEntries(state, entries){
   return state.set('entries', list)
 }
 
-export function vote(state, entry){
-  return state.updateIn(
+export function vote(voteState, entry) {
+  return voteState.updateIn(
     ['tally', entry],
     0,
     tally => tally + 1
-  )
+  );
 }
+
 
 export function next(state){
   const entries = state.get('entries').concat(getWinners(state.get('vote')))
