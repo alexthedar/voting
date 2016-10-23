@@ -1,12 +1,14 @@
 import {List, Map} from 'immutable'
+export const INITIAL_STATE = Map()
 
 export function setEntries(state, entries){
-  return state.set('entries', entries)
+  const list = List(entries);
+  return state.set('entries', list)
 }
 
 export function vote(state, entry){
   return state.updateIn(
-    ['vote', 'tally', entry],
+    ['tally', entry],
     0,
     tally => tally + 1
   )
