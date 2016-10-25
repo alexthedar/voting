@@ -12,7 +12,7 @@ describe('reducer', () => {
 
     expect(nextState).to.equal(fromJS({
       entries: ['Trainspotting']
-    }));
+    }));votin
   });
 
   it('handles NEXT', () => {
