@@ -23,8 +23,8 @@
     "webpack-dev-server": "^1.16.2"
   },
   "scripts": {
-    "test": "mocha --compilers js: babel-core/register --require ./test/test_helper.js \"test/**/*@(.js|.jsx)\"",
-    "test: watch": "npm run test -- --watch"
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js \"test/**/*@(.js|.jsx)\"",
+    "test:watch": "npm run test -- --watch"
   },
   "babel": {
     "presets": [
